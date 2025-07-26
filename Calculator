@@ -1,8 +1,8 @@
 def simpcalc():
   num1=int(input("Enter first number: "))
   num2=int(input("Enter second number: "))
-  print("Enter operation",end=":")
-  print("'+','-','*','/'")
+  print("Enter operation",end="")
+  print("{'+','-','*','/'}",end=':')
   operation=input()
   if operation=='+':
     print(num1+num2)
@@ -17,4 +17,9 @@ def simpcalc():
       print(num1/num2)
   else:
     print("Invalid operation")
+  re=(int(input("Enter 1 to continue or 0 to exit: ")))
+  if re==1:
+    simpcalc()
+  else:
+    pass
 simpcalc()
